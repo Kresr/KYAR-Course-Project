@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tour agency</title>
+    <link rel="stylesheet" href="css/contacts/contacts.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" Nobile />
+    <link href="https://fonts.googleapis.com/css2?family=Nobile&display=swap" rel="stylesheet"/>
+  </head>
+<body>
+        <header>
+          <img id="logo" src="svg/logo.svg" alt="" width="100%" height="100%" />
+          <ul id="nav">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="tours.html">Туры</a></li>
+            <li><a href="Contacts.html">Контакты</a></li>
+            <li><a href="about_us.html">О нас</a></li>
+            <div class="nav-item"><a href="tours.html" class="button">Подобрать тур</a></div>
+          </ul>
+          <div id="phone">
+            <img src="svg/telephone.svg" alt="" class="phone" />
+            <p>+3752912345</p>
+          </div>
+          <div id="mail">
+            <img src="svg/mail.svg" alt=""/>
+            <p>adelin@mail.com</p>
+          </div>
+          <label for="burger_btn"></label>
+          <input id="burger_btn" class="burger_btn" type="checkbox" />
+        </header>
+        <main> 
+            <div class="inf">
+            <div class="agency">
+                <h2>Туристическое агенство - tour agency</h2>
+                <p>г. Минск, ул. Белорусская, д. 19, кб. 15</p>
+                <p>+375 (33) 333-66-21 <br>+375 (29) 333-66-22 <br>+375 (44) 333-66-23</p>                
+            </div>
+            <div class="people">
+                <div id="man1">
+                    <h2>Наш менеджер по туризму</h2>
+                    <p class="spes">Алексей Газпром</p>
+                    <br>
+                    <img src="svg/telephoneb.svg" alt="">
+                    <p>+375 (17) 399-24-07</p>
+                    <br>
+                    <img src="svg/mailb.svg" alt="">
+                    <p>touragencyman@gmail.com</p>
+                </div>
+            </div>
+        </div>
+        <form action="">
+            <h2>Уточнить онлайн</h2>
+            <input type="text" class="name" placeholder="ФИО*">
+            <input type="email" class="mail" placeholder="E-mail*">
+            <input type="tel" class="phone" placeholder="Номер телефона *">
+            <textarea class="text" placeholder="Ваш вопрос *"></textarea>
+            <input type="submit" id="submitQ" value="Отправить">
+        </form>
+        </main>
+        <footer>
+          <img id="logo" src="svg/logo.svg" alt="" width="100%" height="100%" />
+          <div id="phone">
+            <img src="svg/telephone.svg" alt="" class="phone" />
+            <p>+3752912345</p>
+          </div>
+          <div id="mail">
+            <img src="svg/mail.svg" alt="" class="mail" />
+            <p>adelin@mail.com</p>
+          </div>
+        </footer>
+        <script src="JS/burger.js"></script>
+      </body>
+    </html>

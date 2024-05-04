@@ -1,0 +1,474 @@
+body header {
+  display: flex;
+  max-width: 1980px;
+  background-color: rgba(0, 0, 0, 0);
+  flex-direction: row;
+  flex-shrink: 1;
+  width: 100%;
+  height: 5%;
+  position: relative;
+  padding-top: 1vw;
+  align-items: center;
+}
+body header #logo {
+  display: inline-block;
+  position: relative;
+  top: 100%;
+  left: 5%;
+  width: 15vw;
+  height: 5vw;
+}
+body header #nav {
+  width: 45vw;
+  margin: 0;
+  box-sizing: content-box;
+  display: flex;
+  padding: 0;
+  margin-left: 9vw;
+  flex-direction: row;
+  margin-top: 1vw;
+  color: #fefefe;
+}
+body header #nav li {
+  box-sizing: content-box;
+  display: flex;
+  margin-right: 6.5%;
+  line-height: 50%;
+  font-size: 2vw;
+}
+body header #nav li a {
+  white-space: nowrap;
+  color: #fefefe;
+  text-decoration: none;
+  -webkit-text-stroke: 0.5px black;
+  font-family: "Nobile", sans-serif;
+  font-weight: bold;
+}
+body header #phone {
+  display: flex;
+  position: relative;
+  margin-right: 6vw;
+  margin-top: -3vw; 
+  margin-left: 10%;
+  align-items: center; 
+  justify-content: flex-end;
+  left: 5%;
+}
+body header #phone p {
+  margin: 0;
+  font-size: 1vw;
+  font-weight: 100;
+  display: inline-block;
+  font-family: "Nobile", sans-serif;
+  color: #fefefe;
+  padding-right: 6%;
+}
+body header #mail {
+  display: flex;
+  align-items: center; 
+  justify-content: flex-end;
+  margin-right: 10vw;
+  margin-left: 29px;
+  margin-top: -3vw; 
+}
+.button {
+  font-family: "Nobile", sans-serif;
+  padding: 6px 15px 6px 15px;
+  border-radius: 30px;
+  background-color: #D88F35;
+  color: #FFF;
+  font-size: 1.5vw;
+  line-height: 1;
+  white-space: nowrap;
+  text-decoration: none;
+  position: relative; 
+  top: -0.3vw; 
+}
+.button:hover {
+  background-color: #BD7B27;
+}
+body header #mail p {
+  margin: 0;
+  font-size: 1vw;
+  font-weight: 100;
+  display: inline-block;
+  font-family: "Nobile";
+  color: #fefefe;
+}
+body header label {
+  display: none;
+}
+body header input {
+  display: none;
+}
+body footer {
+  display: flex;
+  max-width: 1980px;
+  margin-top: 0vw;
+  position: relative;
+  top: 100%;
+}
+body footer #logo {
+  display: inline-block;
+  position: relative;
+  width: 10vw;
+  margin-top: 70px;
+  margin-left: 0;
+  margin-right: 0;
+}
+body footer #phone {
+  display: flex;
+  margin-left: auto;
+  align-items: start;
+  justify-content: flex-end;
+  margin-top: 4vw;
+  margin-right: 2vw;
+}
+body footer #phone p {
+  margin: 0;
+  font-size: 1vw;
+  display: inline-block;
+  font-family: "Nobile";
+  color: #fefefe;
+  font-weight: 100;
+}
+body footer #mail {
+  display: flex;
+  align-items: start;
+  justify-content: flex-end;
+  margin-top: 4vw;
+  position: relative;
+}
+body footer #mail p {
+  margin: 0;
+  font-size: 1vw;
+  display: inline-block;
+  font-family: "Nobile";
+  color: #fefefe;
+  font-weight: 100;
+}
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../fons/contacts.jpg) no-repeat;
+  background-size: cover;
+}
+body {
+  position: relative; 
+  min-height: 100vh; 
+}
+body main {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  margin-left: 7vw;
+  margin-right: 7vw;
+  margin-top: 5vw;
+  font-family: "nobile", sans-serif;
+  margin-bottom: 10vw;
+}
+body main .inf {
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+}
+body main .inf .agency {
+  animation-name: slide;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+  transition: 0.5s ease-out;
+  background-color: rgba(217, 217, 217, 0.7);
+  height: 30%;
+  padding: 1.5vw;
+}
+body main .inf .agency h2 {
+  font-weight: bold;
+  margin: 0;
+}
+body main .inf .agency p {
+  font-weight: bold;
+  margin: 5px;
+}
+body main .inf .agency:hover {
+  transition: 0.5s ease-out;
+  border-radius: 1.5vw;
+  background-color: rgb(217, 217, 217);
+}
+body main .inf .people div {
+  background-color: rgba(217, 217, 217, 0.7);
+  animation-name: slide;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  height: 100%;
+  transition: 0.5s ease-out;
+}
+body main .inf .people div h2 {
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.5vw;
+  margin-bottom: 0;
+}
+body main .inf .people div .spes {
+  font-family: "nobile", sans-serif;
+  font-weight: bold;
+  display: block;
+  text-align: center;
+  margin-bottom: 0;
+}
+body main .inf .people div p {
+  margin-bottom: 5px;
+  display: inline-block;
+  text-align: center;
+  font-weight: bold;
+}
+body main .inf .people div:hover {
+  transition: 0.5s ease-out;
+  border-radius: 1.5vw;
+  background-color: rgb(217, 217, 217);
+}
+body main .inf .people div img {
+  width: 0.85vw;
+  margin-top: 8px;
+  margin-bottom: -2px;
+}
+body main form {
+  margin-left: 25vw;
+  margin-top: 1vw;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(217, 217, 217, 0.7);
+  padding: 2vw;
+  height: 50%;
+  font-family: "nobile", sans-serif;
+  font-weight: 100;
+  width: 20vw;
+}
+body main form h2 {
+  font-weight: bold;
+  text-align: center;
+}
+body main form input {
+  margin-top: 3vw;
+  background-color: #fff;
+  border-radius: 40rem;
+  border: 1px solid #fff;
+  padding: 0.5rem 0.5rem;
+}
+body main form textarea {
+  margin-top: 3vw;
+  background-color: #fff;
+  border-radius: 40rem;
+  border: 1px solid #fff;
+  padding: 0.5rem 0.5rem;
+}
+@media screen and (max-width: 960px) {
+  body header #nav {
+    visibility: hidden;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-left: -20px;
+    list-style-type: none;
+    background: rgb(255, 255, 255);
+    margin-left: 0;
+    margin-top: 15vw;
+    height: 50;
+  }
+  body header #nav li {
+    display: block;
+    text-align: center;
+    border-bottom: 0.8px black solid;
+    width: 40vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  body header #nav li a {
+    display: block;
+    white-space: nowrap;
+    padding: auto;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    padding-bottom: auto;
+    font-family: "Nobile";
+    line-height: 5vw;
+    margin-left: 1vw;
+    font-size: 8vw;
+    font-weight: 100;
+  }
+  body header #nav.active {
+    visibility: visible;
+  }
+  body header #logo {
+    margin-top: -6vw;
+    width: 35%;
+    height: 35%;
+    left: 0;
+  }
+  body header #mail {
+    margin-top: -6vw;
+    margin-left: 0;
+    margin-right: 2vw;
+  }
+  body header #mail p {
+    font-size: 2.5vw;
+    width: 10vw;
+  }
+  body header #mail img {
+    width: 3vw;
+    height: 3vw;
+  }
+  body header #phone {
+    margin-top: -6vw;
+    margin-left: 2vw;
+  }
+  body header #phone p {
+    font-size: 2.5vw;
+  }
+  body header #phone img {
+    left: 10vw;
+    width: 3vw;
+    height: 3vw;
+  }
+  body header label {
+    display: block;
+    position: relative;
+    margin-top: -1%;
+    padding-top: 7%;
+    margin-bottom: 4%;
+    margin-left: 10%;
+    width: 12vw;
+    height: 12vw;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../../svg/hamb.svg);
+    z-index: 3;
+  }
+  body header input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+  }
+  body footer {
+    margin-top: 10%;
+    box-sizing: content-box;
+  }
+  body footer #logo {
+    box-sizing: content-box;
+    margin-top: 22vw;
+    width: 30%;
+    height: 30%;
+  }
+  body footer #mail {
+    box-sizing: content-box;
+    margin-top: 23vw;
+    margin-right: 2vw;
+  }
+  body footer #mail p {
+    box-sizing: content-box;
+    font-size: 2.5vw;
+  }
+  body footer #phone {
+    box-sizing: content-box;
+    margin-top: 23vw;
+  }
+  body footer #phone p {
+    z-index: -1;
+    box-sizing: content-box;
+    font-size: 2.5vw;
+  }
+  body footer #phone img {
+    margin-top: 0.1vw;
+    width: 3vw;
+    height: 3vw;
+  }
+  body footer #mail img {
+    width: 3vw;
+    height: 3vw;
+  }
+  .button {
+    visibility: hidden;
+  }
+  body {
+    background-size: 100% 100%;
+  }
+  body main.active {
+    margin-top: 50vw;
+  }
+  body main {
+    flex-direction: column;
+    width: 70%;
+    height: 120%;
+    padding-bottom: 25vw;
+    margin-bottom: 10vw;
+  }
+  body main .inf .agency {
+    margin-top: 7vw;
+    margin-left: 7vw;
+    position: relative;
+    width: 95%;
+    height: auto;
+    padding-top: 5vw;
+    padding-bottom: 10vw;
+  }
+  body main .inf .people {
+    margin-top: 10vw;
+    width:  100%;
+    margin-left: 7vw;
+    padding-top: 4vw;
+    padding-bottom: 10vw;
+  }
+  body main .inf .people div h2 {
+    font-size: 15px;
+  }
+  body main .inf .people div img {
+    width: 7%;
+  }
+  body main form {
+    margin-top: 36vw;
+    width: 95%;
+    margin-left: 8vw;
+    margin-right: auto;
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+  }
+  #man1 p:nth-of-type(2){
+    font-size: 11px;
+  }
+  #man1 p:nth-of-type(3){
+    font-size: 10px;
+  }
+  body main .inf .agency h2 {
+    font-weight: bold;
+    font-size: 15px;
+    margin: 0;
+  }
+  body main .inf .agency p {
+    font-weight: bold;
+    margin: 5px;
+    font-size: 10px;
+  }
+  body main .inf .people div p {
+    margin-bottom: 5px;
+    font-size: 10px;
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+  }
+}
+@keyframes slide {
+  from {
+    visibility: hidden;
+  }
+  to {
+    visibility: visible;
+  }
+}

@@ -1,0 +1,380 @@
+body main div h2 {
+  margin-left: auto;
+  margin-right: auto;
+}
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../fons/onas.jpg) no-repeat;
+  background-size: cover;
+  background-attachment: fixed, fixed;
+}
+body header {
+  display: flex;
+  max-width: 1980px;
+  background-color: rgba(0, 0, 0, 0);
+  flex-direction: row;
+  flex-shrink: 1;
+  width: 100%;
+  height: 5%;
+  position: relative;
+  padding-top: 1vw;
+  align-items: center;
+}
+body header #logo {
+  display: inline-block;
+  position: relative;
+  top: 100%;
+  left: 5%;
+  width: 15vw;
+  height: 5vw;
+}
+body header #nav {
+  width: 45vw;
+  margin: 0;
+  box-sizing: content-box;
+  display: flex;
+  padding: 0;
+  margin-left: 9vw;
+  flex-direction: row;
+  margin-top: 1vw;
+  color: #fefefe;
+}
+body header #nav li {
+  box-sizing: content-box;
+  display: flex;
+  margin-right: 6.5%;
+  line-height: 50%;
+  font-size: 2vw;
+}
+body header #nav li a {
+  white-space: nowrap;
+  color: #fefefe;
+  text-decoration: none;
+  -webkit-text-stroke: 0.5px black;
+  font-family: "Nobile", sans-serif;
+  font-weight: bold;
+}
+body header #phone {
+  display: flex;
+  position: relative;
+  margin-right: 6vw;
+  margin-top: -3vw; 
+  margin-left: 10%;
+  align-items: center; 
+  justify-content: flex-end;
+  left: 5%;
+}
+body header #phone p {
+  margin: 0;
+  font-size: 1vw;
+  font-weight: 100;
+  display: inline-block;
+  font-family: "Nobile", sans-serif;
+  color: #fefefe;
+  padding-right: 6%;
+}
+body header #mail {
+  display: flex;
+  align-items: center; 
+  justify-content: flex-end;
+  margin-right: 10vw;
+  margin-left: 29px;
+  margin-top: -3vw; 
+}
+.button {
+  font-family: "Nobile", sans-serif;
+  padding: 6px 15px 6px 15px;
+  border-radius: 30px;
+  background-color: #D88F35;
+  color: #FFF;
+  font-size: 1.5vw;
+  line-height: 1;
+  white-space: nowrap;
+  text-decoration: none;
+  position: relative; 
+  top: -0.3vw; 
+}
+.button:hover {
+  background-color: #BD7B27;
+}
+body header #mail p {
+  margin: 0;
+  font-size: 1vw;
+  font-weight: 100;
+  display: inline-block;
+  font-family: "Nobile";
+  color: #fefefe;
+}
+body header label {
+  display: none;
+}
+body header input {
+  display: none;
+}
+body main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-family: "Nobile", sans-serif;
+  justify-content: space-between;
+  margin-top: 10vw;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  margin-bottom: 30vw;
+  flex-wrap: wrap;
+  color: #fefefe;
+}
+body main .break {
+  flex-basis: 100%;
+  height: 0;
+}
+body main div {
+  margin-top: 5vw;
+  display: flex;
+  flex-direction: column;
+  vertical-align: middle;
+}
+body main div h2 {
+  font-weight: 300;
+  width: auto;
+}
+body main div img {
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  left: 44%;
+  width: 30px;
+  height: 2vw;
+  margin-bottom: 0;
+  transition: filter 0.5s ease-out;
+}
+body main div p {
+  margin-left: vw;
+  margin-top: 0;
+  width: 17vw;
+  font-weight: 200;
+  animation-name: fade-in;
+  animation-duration: 4s;
+}
+body main div:hover img {
+  filter: blur(5px) grayscale(100%); 
+  transition: filter 0.5s ease-out; 
+}
+body footer {
+  display: flex;
+  max-width: 1980px;
+  margin-top: 0vw;
+  position: relative;
+  top: 100%;
+}
+body footer #logo {
+  display: inline-block;
+  position: relative;
+  width: 10vw;
+  margin-top: 70px;
+  margin-left: 0;
+  margin-right: 0;
+}
+body footer #phone {
+  display: flex;
+  margin-left: auto;
+  align-items: start;
+  justify-content: flex-end;
+  margin-top: 4vw;
+  margin-right: 2vw;
+}
+body footer #phone p {
+  margin: 0;
+  font-size: 1vw;
+  display: inline-block;
+  font-family: "Nobile";
+  color: #fefefe;
+  font-weight: 100;
+}
+body footer #mail {
+  display: flex;
+  align-items: start;
+  justify-content: flex-end;
+  margin-top: 4vw;
+  position: relative;
+}
+body footer #mail p {
+  margin: 0;
+  font-size: 1vw;
+  display: inline-block;
+  font-family: "Nobile";
+  color: #fefefe;
+  font-weight: 100;
+}
+@media screen and (max-width: 960px) {
+  body header #nav {
+    visibility: hidden;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-left: -20px;
+    list-style-type: none;
+    background: rgb(255, 255, 255);
+    margin-left: 0;
+    margin-top: 15vw;
+    height: 50;
+  }
+  body header #nav li {
+    display: block;
+    text-align: center;
+    border-bottom: 0.8px black solid;
+    width: 40vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  body header #nav li a {
+    display: block;
+    white-space: nowrap;
+    padding: auto;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    padding-bottom: auto;
+    font-family: "Nobile";
+    line-height: 5vw;
+    margin-left: 1vw;
+    font-size: 8vw;
+    font-weight: 100;
+  }
+  body header #nav.active {
+    visibility: visible;
+  }
+  body header #logo {
+    margin-top: -6vw;
+    width: 35%;
+    height: 35%;
+    left: 0;
+  }
+  body header #mail {
+    margin-top: -6vw;
+    margin-left: 0;
+    margin-right: 2vw;
+  }
+  body header #mail p {
+    font-size: 2.5vw;
+    width: 10vw;
+  }
+  body header #mail img {
+    width: 3vw;
+    height: 3vw;
+  }
+  body header #phone {
+    margin-top: -6vw;
+    margin-left: 2vw;
+  }
+  body header #phone p {
+    font-size: 2.5vw;
+  }
+  body header #phone img {
+    left: 10vw;
+    width: 3vw;
+    height: 3vw;
+  }
+  body header label {
+    display: block;
+    position: relative;
+    margin-top: -1%;
+    padding-top: 7%;
+    margin-bottom: 4%;
+    margin-left: 10%;
+    width: 12vw;
+    height: 12vw;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../../svg/hamb.svg);
+    z-index: 3;
+  }
+  body header input {
+    position: absolute;
+    z-index: 3;
+    opacity: 0;
+  }
+  body footer {
+    margin-top: 10%;
+    box-sizing: content-box;
+  }
+  body footer #logo {
+    box-sizing: content-box;
+    margin-top: 22vw;
+    width: 30%;
+    height: 30%;
+  }
+  body footer #mail {
+    box-sizing: content-box;
+    margin-top: 23vw;
+    margin-right: 2vw;
+  }
+  body footer #mail p {
+    box-sizing: content-box;
+    font-size: 2.5vw;
+  }
+  body footer #phone {
+    box-sizing: content-box;
+    margin-top: 23vw;
+  }
+  body footer #phone p {
+    box-sizing: content-box;
+    font-size: 2.5vw;
+  }
+  body footer #phone img {
+    margin-top: 0.1vw;
+    width: 3vw;
+    height: 3vw;
+  }
+  body footer #mail img {
+    width: 3vw;
+    height: 3vw;
+  }
+  body main.active {
+    margin-top: 42vw;
+  }
+  body main {
+    flex-direction: column;
+    padding: 1vw;
+  }
+  body main div img {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    left: 43vw;
+  }
+  body main div p {
+    font-weight: 200;
+    animation-name: slide_mobile;
+    animation-duration: 6.5s;
+    margin-right: 20vw;
+    margin: 0;
+    width: 95vw;
+    height: auto;
+  }
+  .button {
+    visibility: hidden;
+  }
+}
+@keyframes fade-in_mobile {
+  from {
+    background-color: white;
+    filter: opacity(0.1);
+    background-size: cover;
+  }
+  to {
+    background-size: 0%;
+  }
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
