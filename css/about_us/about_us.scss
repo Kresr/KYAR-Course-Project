@@ -120,7 +120,7 @@ body main {
   margin-top: 10vw;
   padding-left: 10vw;
   padding-right: 10vw;
-  margin-bottom: 30vw;
+  margin-bottom: 20vw;
   flex-wrap: wrap;
   color: #fefefe;
 }
@@ -218,13 +218,14 @@ body footer #mail p {
     background: rgb(255, 255, 255);
     margin-left: 0;
     margin-top: 15vw;
+    padding-top: 5vw;
     height: 50;
   }
   body header #nav li {
     display: block;
     text-align: center;
-    margin-top: 4vw;
     border-bottom: 0.8px black solid;
+    margin-top: 4vw;
     width: 40vw;
     margin-left: auto;
     margin-right: auto;
@@ -296,7 +297,7 @@ body footer #mail p {
   }
   body header input {
     position: absolute;
-    z-index: 3;
+    z-index: -1;
     opacity: 0;
   }
   body footer {
