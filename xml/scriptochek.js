@@ -10,7 +10,7 @@ window.addEventListener('DOMContentLoaded', () => {
       const tableBody = document.querySelector("main");
       MenuCards.forEach(function (student) {
           const scr = student.querySelector("image").textContent;
-          const title = student.querySelector("zagolovok").textContent;
+          const title = student.querySelector("headtitle").textContent;
           const text = student.querySelector("abzactz").textContent;
           tableBody.innerHTML += `
           <div>
