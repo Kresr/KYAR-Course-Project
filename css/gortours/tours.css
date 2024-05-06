@@ -254,6 +254,7 @@ body {
   body header #nav li {
     display: block;
     text-align: center;
+    margin-top: 4vw;
     border-bottom: 0.8px black solid;
     width: 40vw;
     margin-left: auto;
